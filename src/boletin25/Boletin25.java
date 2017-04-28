@@ -23,6 +23,8 @@ public class Boletin25 {
         ej3.iniciar();
         Ejercicio4 ej4=new Ejercicio4();
         ej4.iniciar();
+        Ejercicio4b ej4b=new Ejercicio4b();
+        ej4b.iniciar();
     }
     
 }
