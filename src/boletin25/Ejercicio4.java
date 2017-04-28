@@ -34,16 +34,17 @@ public class Ejercicio4 {
                         
         botonAbrir.addActionListener((ActionEvent e) -> {
             ventana2.setVisible(true);
+            /*
+            //Haciendo pruebas con Threads
             CambioFondo cf = new CambioFondo();
             t2 = new Thread(cf);
             t2.start();
-            
+            */
         });
         
         botonParar.addActionListener((ActionEvent e)->{
-            if(t2.isAlive()){
-                ventana2.dispose();                
-            }
+                            ventana2.dispose();                
+            
         });
 
         ventana1.setSize(200, 200);
@@ -54,6 +55,7 @@ public class Ejercicio4 {
         panel1.add(botonParar);
         ventana1.add(panel1);
 
+        panel2.setBackground(Color.red);
         ventana2.add(panel2);
         ventana2.setSize(600, 400);
         ventana2.setLocation(300, 300);
